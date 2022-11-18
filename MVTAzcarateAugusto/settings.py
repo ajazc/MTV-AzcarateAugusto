@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVTAzcarateAugusto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['D:/Cursos/Python/MVT-AzcarateAugusto/MVTAzcarateAugusto/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

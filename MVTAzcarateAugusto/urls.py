@@ -13,9 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+#AGREGO LA RUTA FAMILIARES QUE SERA ATENDIDA POR EL CONTROLADOR (VIEW) familiares
+
 from django.contrib import admin
 from django.urls import path
-
+from AppMVT.views import familiares
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('familiares/',familiares),
 ]
