@@ -26,11 +26,11 @@ def familiares(request):
     familiar1.save()
     familiar2.save()
     familiar3.save()
-    lista_familiares ={"familiar1":datos_familiar1, "familiar2":datos_familiar2, "familiar3":datos_familiar3}
+    diccionario  ={"familiar1": familiar1, "familiar2": familiar2, "familiar3": familiar3}
     #preparo el template
     plantilla = loader.get_template('template_familia.html')
     
-    documento = plantilla.render(lista_familiares)
+    documento = plantilla.render(diccionario)
     #Mando a renderizar los datos de los familiares
 
     #documento = plantilla.render(datos_familiar1,datos_familiar2,datos_familiar3)
